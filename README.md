@@ -1,5 +1,7 @@
 # Spellcard generator
 
+[![build status][travis-image]][travis-url]
+
 > A spellcard generator for the Pathfinder Roleplaying Game.
 
 ## Running locally
@@ -31,3 +33,5 @@ This project uses trademarks and/or copyrights owned by Paizo Inc., which are us
 [paizo.com]: https://paizo.com
 [paizo.com/communityuse]: https://paizo.com/communityuse
 [nodejs]: https://nodejs.org
+[travis-image]: https://img.shields.io/travis/remcohaszing/spellcard-creator.svg
+[travis-url]: https://travis-ci.org/remcohaszing/spellcard-creator

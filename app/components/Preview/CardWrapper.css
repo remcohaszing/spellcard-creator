@@ -1,0 +1,42 @@
+@value card-wrapper-icons, card-wrapper-shadow from '../../constants/colors.css';
+
+.card-wrapper {
+  margin: 10px;
+  position: relative;
+
+  &:hover .card-tools {
+    opacity: 1;
+  }
+}
+
+.card-tools {
+  background: linear-gradient(card-wrapper-shadow, rgba(0, 0, 0, 0));
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  right: 0;
+  position: absolute;
+  transition: opacity 0.3s;
+  z-index: 10;
+
+  & a,
+  & button {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    border-style: none;
+    color: card-wrapper-icons;
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}

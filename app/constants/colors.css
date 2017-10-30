@@ -1,0 +1,18 @@
+/**
+ * Preview colors
+ */
+@value preview-background: #000000;
+@value card-wrapper-shadow: #000000;
+@value card-wrapper-icons: #ffffff;
+
+/**
+ * Controls
+ */
+@value controls-background: #ab9e90;
+@value image-picker-background: #eeeeee;
+@value image-picker-shadow: #000000;
+@value searchbox-input: #e9e9e9;
+@value searchbox-results: #d5bd93;
+@value searchbox-results-hover: #b0976b;
+@value color-picker-pointer: #ffffff;
+@value modal: #eed38f;

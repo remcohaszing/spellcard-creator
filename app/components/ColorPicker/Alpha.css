@@ -1,0 +1,22 @@
+@value size: 20px;
+@value square-size: 10px;
+@value light: #aaaaaa;
+@value dark: #555555;
+
+.alpha {
+  background-color: light;
+  background-image:
+    linear-gradient(45deg, dark 25%, transparent 25%, transparent 75%, dark 75%, dark),
+    linear-gradient(45deg, dark 25%, transparent 25%, transparent 75%, dark 75%, dark);
+  background-position: 0 0, square-size square-size;
+  background-size: size size;
+  flex: 0 0 auto;
+  height: size;
+  width: 100%;
+  user-select: none;
+}
+
+.alpha-slider {
+  height: 100%;
+  width: 100%;
+}

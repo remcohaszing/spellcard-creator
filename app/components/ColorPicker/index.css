@@ -1,0 +1,45 @@
+:root {
+  --button-size: 16px;
+}
+
+.root {
+  display: inline-block;
+  position: relative;
+  flex-direction: column;
+}
+
+.header {
+  margin: 0;
+}
+
+.toggle {
+  border: none;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  display: inline-block;
+  height: var(--button-size);
+  outline: none;
+  width: var(--button-size);
+}
+
+.picker {
+  display: flex;
+  flex-flow: column;
+  height: 0;
+  left: calc(var(--button-size) / 2);
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: calc(var(--button-size) / 2);
+  transition: 0.3s;
+  width: 0;
+  z-index: 1;
+
+  &.opened {
+    height: 200px;
+    opacity: 1;
+    top: var(--button-size);
+    width: 200px;
+  }
+}

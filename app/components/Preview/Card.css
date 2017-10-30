@@ -1,0 +1,65 @@
+.card {
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #000000;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.properties {
+  flex: 0 0 auto;
+}
+
+.header {
+  margin: 0;
+}
+
+.level {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 50px;
+}
+
+.description-wrapper {
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.description {
+  box-sizing: border-box;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.description-inner {
+  height: 100%;
+  overflow-y: hidden;
+
+  & p {
+    margin: 0 0 3px;
+  }
+}
+
+.summoning-table {
+  width: 100%;
+}
+
+.summoning-table-row {
+  border-bottom: 1px solid;
+}
+
+.summoning-subtype {
+  border-bottom: 1px solid;
+  text-align: right;
+}

@@ -1,0 +1,16 @@
+@value color-picker-pointer from '../../constants/colors.css';
+
+.slider {
+  overflow: hidden;
+}
+
+.pointer {
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+  box-shadow: inset color-picker-pointer 0 0 4px 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 12px;
+  position: sticky;
+  width: 12px;
+}

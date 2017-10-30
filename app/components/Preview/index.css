@@ -1,0 +1,11 @@
+@value preview-background from '../../constants/colors.css';
+
+.preview {
+  background-color: preview-background;
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: wrap;
+  justify-content: space-around;
+  overflow-x: auto;
+  overflow-y: scroll;
+}

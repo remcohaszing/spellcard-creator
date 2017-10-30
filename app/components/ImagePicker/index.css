@@ -1,0 +1,37 @@
+@value image-picker-background, image-picker-shadow from '../../constants/colors.css';
+
+.root {
+  width: 100px;
+  height: 150px;
+  background-color: image-picker-background;
+  position: relative;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  box-shadow: inset image-picker-shadow 0 0 2px 1px;
+
+  &:hover {
+    box-shadow: inset image-picker-shadow 0 0 20px 8px;
+  }
+
+  &.active {
+    box-shadow: inset image-picker-shadow 0 0 50px 22px;
+  }
+}
+
+.preview {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

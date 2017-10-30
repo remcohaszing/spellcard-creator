@@ -1,0 +1,8 @@
+.saturation {
+  background-image:
+    linear-gradient(transparent, #000000),
+    linear-gradient(to left, transparent, #ffffff);
+  flex: 1 1 auto;
+  user-select: none;
+  width: 100%;
+}

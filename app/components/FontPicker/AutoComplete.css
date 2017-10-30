@@ -1,0 +1,39 @@
+@value searchbox-input, searchbox-results, searchbox-results-hover from '../../constants/colors.css';
+@value width: 200px;
+
+.root {
+  display: inline-block;
+  height: 22px;
+  margin: 2px;
+  width: width;
+}
+
+.input {
+  background-color: searchbox-input;
+  border: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.font-list {
+  max-height: 200px;
+  overflow-y: scroll;
+  width: width;
+  transition: max-height 0.1s;
+  position: absolute;
+
+  &.font-list-closed {
+    max-height: 0;
+  }
+}
+
+.option {
+  cursor: pointer;
+  background-color: searchbox-results;
+
+  &:hover {
+    background-color: searchbox-results-hover;
+  }
+}

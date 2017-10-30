@@ -1,0 +1,16 @@
+@value controls-background from '../../constants/colors.css';
+@value text-font from '../../constants/fonts.css';
+
+.side-bar {
+  display: flex;
+  font-family: Droid Sans, sans-serif;
+  background-color: controls-background;
+  flex: 0 0 auto;
+  flex-flow: column;
+  width: 500px;
+}
+
+.controls {
+  flex: 1 1;
+  overflow-y: auto;
+}

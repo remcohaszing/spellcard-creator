@@ -1,8 +1,7 @@
 # Spellcard generator
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/remcohaszing/spellcard-creator.svg)](https://greenkeeper.io/)
-
 [![build status][travis-image]][travis-url]
+[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 > A spellcard generator for the Pathfinder Roleplaying Game.
 
@@ -35,5 +34,7 @@ This project uses trademarks and/or copyrights owned by Paizo Inc., which are us
 [paizo.com]: https://paizo.com
 [paizo.com/communityuse]: https://paizo.com/communityuse
 [nodejs]: https://nodejs.org
+[greenkeeper-image]: https://badges.greenkeeper.io/remcohaszing/spellcard-creator.svg
+[greenkeeper-url]: https://greenkeeper.io
 [travis-image]: https://img.shields.io/travis/remcohaszing/spellcard-creator.svg
 [travis-url]: https://travis-ci.org/remcohaszing/spellcard-creator

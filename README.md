@@ -1,5 +1,7 @@
 # Spellcard generator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/remcohaszing/spellcard-creator.svg)](https://greenkeeper.io/)
+
 [![build status][travis-image]][travis-url]
 
 > A spellcard generator for the Pathfinder Roleplaying Game.

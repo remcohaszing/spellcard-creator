@@ -1,5 +1,5 @@
 const tag = document.createElement('style');
-document.head.append(tag);
+document.head.appendChild(tag);
 const styleSheet = [].find.call(document.styleSheets, ({ ownerNode }) => ownerNode === tag);
 
 

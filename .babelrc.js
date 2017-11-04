@@ -1,7 +1,7 @@
 const presets = [
-  ['env', { modules: false }],
-  'stage-0',
-  'react',
+  ['@babel/env', { modules: false }],
+  '@babel/stage-0',
+  '@babel/react',
 ];
 
 
@@ -12,7 +12,7 @@ const plugins = [
 
 if (process.env.NODE_ENV === 'production') {
   plugins.push(
-    'transform-react-inline-elements',
+    '@babel/transform-react-inline-elements',
     'transform-react-remove-prop-types',
   );
 }

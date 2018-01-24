@@ -48,7 +48,7 @@ export default class Preview extends React.Component {
             .filter(([level]) => selection[cls][level])
             .map(([level, spells]) => (
               spells
-                .filter(spell => sources.some(source => spell.url.startsWith(source)))
+                .filter(spell => sources.includes(spell.source))
                 .map(spell => (
                   <CardWrapper
                     key={spell.title}

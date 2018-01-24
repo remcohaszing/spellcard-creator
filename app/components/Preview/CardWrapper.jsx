@@ -44,9 +44,6 @@ export default class CardWrapper extends React.Component {
         }}
       >
         <div className={classes.cardTools}>
-          <a href={`https://paizo.com${spell.url}`} target="_blank" title={`${spell.title} on Paizo`}>
-            <Icon name="external-link" />
-          </a>
           <button onClick={this.downloadAsPDF} title="Download as PDF">
             <Icon name="file-pdf-o" />
           </button>

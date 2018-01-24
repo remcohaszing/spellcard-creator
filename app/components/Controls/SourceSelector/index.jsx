@@ -16,49 +16,49 @@ export default class SourceSelector extends React.Component {
     return (
       <form>
         <SourcePicker
-          name="/pathfinderRPG/prd/advancedClassGuide"
+          name="Advanced Class Guide"
           onChange={onChange}
           sources={sources}
           label="Advanced Class Guide"
         />
         <SourcePicker
-          name="/pathfinderRPG/prd/advancedPlayersGuide"
+          name="APG"
           onChange={onChange}
           sources={sources}
           label="Advanced Player’s guide"
         />
         <SourcePicker
-          name="/pathfinderRPG/prd/coreRulebook"
+          name="PFRPG Core"
           onChange={onChange}
           sources={sources}
           label="Core Rulebook"
         />
         <SourcePicker
-          name="/pathfinderRPG/prd/mythicAdventures"
+          name="Mythic Adventures"
           onChange={onChange}
           sources={sources}
           label="Mythic Adventures"
         />
         <SourcePicker
-          name="/pathfinderRPG/prd/occultAdventures"
+          name="Occult Adventures"
           onChange={onChange}
           sources={sources}
           label="Occult Adventures"
         />
         <SourcePicker
-          name="/pathfinderRPG/prd/technologyGuide"
+          name="Technology Guide"
           onChange={onChange}
           sources={sources}
           label="Technology Guide"
         />
         <SourcePicker
-          name="/pathfinderRPG/prd/ultimateCombat"
+          name="Ultimate Combat"
           onChange={onChange}
           sources={sources}
           label="Ultimate Combat"
         />
         <SourcePicker
-          name="/pathfinderRPG/prd/ultimateMagic"
+          name="Ultimate Magic"
           onChange={onChange}
           sources={sources}
           label="Ultimate Magic"

@@ -81,7 +81,7 @@ async function main() {
       },
     }))
     .pipe(fs.createWriteStream('data/spells.json'))
-    .on('finish', (result) => {
+    .on('finish', () => {
       console.log('done');
     })
     .on('error', (error) => {

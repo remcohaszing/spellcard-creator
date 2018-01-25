@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import books from './sources.json';
 import SourcePicker from './SourcePicker';
 
 
@@ -15,54 +16,14 @@ export default class SourceSelector extends React.Component {
 
     return (
       <form>
-        <SourcePicker
-          name="Advanced Class Guide"
-          onChange={onChange}
-          sources={sources}
-          label="Advanced Class Guide"
-        />
-        <SourcePicker
-          name="APG"
-          onChange={onChange}
-          sources={sources}
-          label="Advanced Player’s guide"
-        />
-        <SourcePicker
-          name="PFRPG Core"
-          onChange={onChange}
-          sources={sources}
-          label="Core Rulebook"
-        />
-        <SourcePicker
-          name="Mythic Adventures"
-          onChange={onChange}
-          sources={sources}
-          label="Mythic Adventures"
-        />
-        <SourcePicker
-          name="Occult Adventures"
-          onChange={onChange}
-          sources={sources}
-          label="Occult Adventures"
-        />
-        <SourcePicker
-          name="Technology Guide"
-          onChange={onChange}
-          sources={sources}
-          label="Technology Guide"
-        />
-        <SourcePicker
-          name="Ultimate Combat"
-          onChange={onChange}
-          sources={sources}
-          label="Ultimate Combat"
-        />
-        <SourcePicker
-          name="Ultimate Magic"
-          onChange={onChange}
-          sources={sources}
-          label="Ultimate Magic"
-        />
+        {books.map(source => (
+          <SourcePicker
+            name={source.id}
+            onChange={onChange}
+            sources={sources}
+            label={source.name}
+          />
+        ))}
       </form>
     );
   }

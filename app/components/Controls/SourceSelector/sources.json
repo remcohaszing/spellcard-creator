@@ -1,0 +1,586 @@
+[
+  {
+    "id": "AP 102",
+    "name": "AP 102"
+  },
+  {
+    "id": "AP 107",
+    "name": "AP 107"
+  },
+  {
+    "id": "AP 110",
+    "name": "AP 110"
+  },
+  {
+    "id": "AP 113",
+    "name": "AP 113"
+  },
+  {
+    "id": "AP 115",
+    "name": "AP 115"
+  },
+  {
+    "id": "AP 116",
+    "name": "AP 116"
+  },
+  {
+    "id": "AP 117",
+    "name": "AP 117"
+  },
+  {
+    "id": "AP 119",
+    "name": "AP 119"
+  },
+  {
+    "id": "AP 29",
+    "name": "AP 29"
+  },
+  {
+    "id": "AP 30",
+    "name": "AP 30"
+  },
+  {
+    "id": "AP 35",
+    "name": "AP 35"
+  },
+  {
+    "id": "AP 42",
+    "name": "AP 42"
+  },
+  {
+    "id": "AP 50",
+    "name": "AP 50"
+  },
+  {
+    "id": "AP 55",
+    "name": "AP 55"
+  },
+  {
+    "id": "AP 56",
+    "name": "AP 56"
+  },
+  {
+    "id": "AP 62",
+    "name": "AP 62"
+  },
+  {
+    "id": "AP 64",
+    "name": "AP 64"
+  },
+  {
+    "id": "AP 65",
+    "name": "AP 65"
+  },
+  {
+    "id": "AP 67",
+    "name": "AP 67"
+  },
+  {
+    "id": "AP 68",
+    "name": "AP 68"
+  },
+  {
+    "id": "AP 69",
+    "name": "AP 69"
+  },
+  {
+    "id": "AP 71",
+    "name": "AP 71"
+  },
+  {
+    "id": "AP 74",
+    "name": "AP 74"
+  },
+  {
+    "id": "AP 77",
+    "name": "AP 77"
+  },
+  {
+    "id": "AP 78",
+    "name": "AP 78"
+  },
+  {
+    "id": "AP 80",
+    "name": "AP 80"
+  },
+  {
+    "id": "AP 81",
+    "name": "AP 81"
+  },
+  {
+    "id": "AP 82",
+    "name": "AP 82"
+  },
+  {
+    "id": "AP 84",
+    "name": "AP 84"
+  },
+  {
+    "id": "AP 86",
+    "name": "AP 86"
+  },
+  {
+    "id": "AP 89",
+    "name": "AP 89"
+  },
+  {
+    "id": "AP 91",
+    "name": "AP 91"
+  },
+  {
+    "id": "AP 93",
+    "name": "AP 93"
+  },
+  {
+    "id": "AP 95",
+    "name": "AP 95"
+  },
+  {
+    "id": "AP 99",
+    "name": "AP 99"
+  },
+  {
+    "id": "APG",
+    "name": "Advanced Player’s guide"
+  },
+  {
+    "id": "Advanced Class Guide",
+    "name": "Advanced Class Guide"
+  },
+  {
+    "id": "Advanced Class Origins",
+    "name": "Advanced Class Origins"
+  },
+  {
+    "id": "Advanced Race Guide",
+    "name": "Advanced Race Guide"
+  },
+  {
+    "id": "Adventurer's Armory 2",
+    "name": "Adventurer's Armory 2"
+  },
+  {
+    "id": "Adventurer's Guide",
+    "name": "Adventurer's Guide"
+  },
+  {
+    "id": "Agents Of Evil",
+    "name": "Agents Of Evil"
+  },
+  {
+    "id": "Andoran",
+    "name": "Andoran"
+  },
+  {
+    "id": "Animal Archive",
+    "name": "Animal Archive"
+  },
+  {
+    "id": "Aquatic Adventures",
+    "name": "Aquatic Adventures"
+  },
+  {
+    "id": "Arcane Anthology",
+    "name": "Arcane Anthology"
+  },
+  {
+    "id": "Armor Masters Handbook",
+    "name": "Armor Masters Handbook"
+  },
+  {
+    "id": "Black Markets",
+    "name": "Black Markets"
+  },
+  {
+    "id": "Blood Of Shadows",
+    "name": "Blood Of Shadows"
+  },
+  {
+    "id": "Blood Of The Beast",
+    "name": "Blood Of The Beast"
+  },
+  {
+    "id": "Blood Of The Elements",
+    "name": "Blood Of The Elements"
+  },
+  {
+    "id": "Blood Of The Moon",
+    "name": "Blood Of The Moon"
+  },
+  {
+    "id": "Blood Of The Night",
+    "name": "Blood Of The Night"
+  },
+  {
+    "id": "Book of the Damned V1",
+    "name": "Book of the Damned V1"
+  },
+  {
+    "id": "Book of the Damned V2",
+    "name": "Book of the Damned V2"
+  },
+  {
+    "id": "Champions Of Balance",
+    "name": "Champions Of Balance"
+  },
+  {
+    "id": "Champions Of Corruption",
+    "name": "Champions Of Corruption"
+  },
+  {
+    "id": "Champions Of Purity",
+    "name": "Champions Of Purity"
+  },
+  {
+    "id": "Cheliax Empire Of Devils",
+    "name": "Cheliax Empire Of Devils"
+  },
+  {
+    "id": "Chronicle Of The Righteous",
+    "name": "Chronicle Of The Righteous"
+  },
+  {
+    "id": "Classic Treasures",
+    "name": "Classic Treasures"
+  },
+  {
+    "id": "Cohorts & Companions",
+    "name": "Cohorts & Companions"
+  },
+  {
+    "id": "Condition Cards",
+    "name": "Condition Cards"
+  },
+  {
+    "id": "Curse Of The Crimson Throne Chapter Appendix",
+    "name": "Curse Of The Crimson Throne Chapter Appendix"
+  },
+  {
+    "id": "Demon Hunter's Handbook",
+    "name": "Demon Hunter's Handbook"
+  },
+  {
+    "id": "Demons Revisited",
+    "name": "Demons Revisited"
+  },
+  {
+    "id": "Dirty Tactics Toolbox",
+    "name": "Dirty Tactics Toolbox"
+  },
+  {
+    "id": "Divine Anthology",
+    "name": "Divine Anthology"
+  },
+  {
+    "id": "Dragon Empires Primer",
+    "name": "Dragon Empires Primer"
+  },
+  {
+    "id": "Dragonslayer's Handbook",
+    "name": "Dragonslayer's Handbook"
+  },
+  {
+    "id": "Dungeoneers Handbook",
+    "name": "Dungeoneers Handbook"
+  },
+  {
+    "id": "Dungeons Of Golarion",
+    "name": "Dungeons Of Golarion"
+  },
+  {
+    "id": "Dwarves of Golarion",
+    "name": "Dwarves of Golarion"
+  },
+  {
+    "id": "Faction Guide",
+    "name": "Faction Guide"
+  },
+  {
+    "id": "Faiths & Philosophies",
+    "name": "Faiths & Philosophies"
+  },
+  {
+    "id": "Faiths Of Corruption",
+    "name": "Faiths Of Corruption"
+  },
+  {
+    "id": "Faiths Of Purity",
+    "name": "Faiths Of Purity"
+  },
+  {
+    "id": "Familiar Folio",
+    "name": "Familiar Folio"
+  },
+  {
+    "id": "Giant Hunters Handbook",
+    "name": "Giant Hunters Handbook"
+  },
+  {
+    "id": "Gnomes Of Golarion",
+    "name": "Gnomes Of Golarion"
+  },
+  {
+    "id": "Goblins Of Golarion",
+    "name": "Goblins Of Golarion"
+  },
+  {
+    "id": "Haunted Heroes Handbook",
+    "name": "Haunted Heroes Handbook"
+  },
+  {
+    "id": "Healer's Handbook",
+    "name": "Healer's Handbook"
+  },
+  {
+    "id": "Heroes Of The Darklands",
+    "name": "Heroes Of The Darklands"
+  },
+  {
+    "id": "Heroes Of The High Court",
+    "name": "Heroes Of The High Court"
+  },
+  {
+    "id": "Heroes Of The Streets",
+    "name": "Heroes Of The Streets"
+  },
+  {
+    "id": "Heroes Of The Wild",
+    "name": "Heroes Of The Wild"
+  },
+  {
+    "id": "Horror Adventures",
+    "name": "Horror Adventures"
+  },
+  {
+    "id": "Horsemen Of The Apocalypse",
+    "name": "Horsemen Of The Apocalypse"
+  },
+  {
+    "id": "Humans Of Golarion",
+    "name": "Humans Of Golarion"
+  },
+  {
+    "id": "Inner Sea Gods",
+    "name": "Inner Sea Gods"
+  },
+  {
+    "id": "Inner Sea Intrigue",
+    "name": "Inner Sea Intrigue"
+  },
+  {
+    "id": "Inner Sea Magic",
+    "name": "Inner Sea Magic"
+  },
+  {
+    "id": "Inner Sea Monster Codex",
+    "name": "Inner Sea Monster Codex"
+  },
+  {
+    "id": "Inner Sea Races",
+    "name": "Inner Sea Races"
+  },
+  {
+    "id": "Inner Sea Temples",
+    "name": "Inner Sea Temples"
+  },
+  {
+    "id": "Inner Sea World Guide",
+    "name": "Inner Sea World Guide"
+  },
+  {
+    "id": "Knights Of The Inner Sea",
+    "name": "Knights Of The Inner Sea"
+  },
+  {
+    "id": "Kobolds Of Golarion",
+    "name": "Kobolds Of Golarion"
+  },
+  {
+    "id": "Legacy Of Dragons",
+    "name": "Legacy Of Dragons"
+  },
+  {
+    "id": "Legacy Of The First World",
+    "name": "Legacy Of The First World"
+  },
+  {
+    "id": "Lost Kingdoms",
+    "name": "Lost Kingdoms"
+  },
+  {
+    "id": "Magic Tactics Toolbox",
+    "name": "Magic Tactics Toolbox"
+  },
+  {
+    "id": "Magical Marketplace",
+    "name": "Magical Marketplace"
+  },
+  {
+    "id": "Melee Tactics Toolbox",
+    "name": "Melee Tactics Toolbox"
+  },
+  {
+    "id": "Monster Codex",
+    "name": "Monster Codex"
+  },
+  {
+    "id": "Monster Hunter's Handbook",
+    "name": "Monster Hunter's Handbook"
+  },
+  {
+    "id": "Monster Summoner's Handbook",
+    "name": "Monster Summoner's Handbook"
+  },
+  {
+    "id": "Mythic Adventures",
+    "name": "Mythic Adventures"
+  },
+  {
+    "id": "Mythic Origins",
+    "name": "Mythic Origins"
+  },
+  {
+    "id": "Occult Adventures",
+    "name": "Occult Adventures"
+  },
+  {
+    "id": "Occult Mysteries",
+    "name": "Occult Mysteries"
+  },
+  {
+    "id": "Occult Origins",
+    "name": "Occult Origins"
+  },
+  {
+    "id": "Occult Realms",
+    "name": "Occult Realms"
+  },
+  {
+    "id": "Orcs of Golarion",
+    "name": "Orcs of Golarion"
+  },
+  {
+    "id": "Osirion, Legacy Of Pharaohs",
+    "name": "Osirion, Legacy Of Pharaohs"
+  },
+  {
+    "id": "PFRPG Core",
+    "name": "Core Rulebook"
+  },
+  {
+    "id": "PFS S3-09",
+    "name": "PFS S3-09"
+  },
+  {
+    "id": "Paizo Blog",
+    "name": "Paizo Blog"
+  },
+  {
+    "id": "Pathfinder Society Field Guide",
+    "name": "Pathfinder Society Field Guide"
+  },
+  {
+    "id": "Pathfinder Society Primer",
+    "name": "Pathfinder Society Primer"
+  },
+  {
+    "id": "Paths Of The Righteous",
+    "name": "Paths Of The Righteous"
+  },
+  {
+    "id": "People Of The North",
+    "name": "People Of The North"
+  },
+  {
+    "id": "People Of The River",
+    "name": "People Of The River"
+  },
+  {
+    "id": "People Of The Sands",
+    "name": "People Of The Sands"
+  },
+  {
+    "id": "People Of The Stars",
+    "name": "People Of The Stars"
+  },
+  {
+    "id": "Pirates Of The Inner Sea",
+    "name": "Pirates Of The Inner Sea"
+  },
+  {
+    "id": "Planes Of Power",
+    "name": "Planes Of Power"
+  },
+  {
+    "id": "Psychic Anthology",
+    "name": "Psychic Anthology"
+  },
+  {
+    "id": "Qadira Jewel Of The East",
+    "name": "Qadira Jewel Of The East"
+  },
+  {
+    "id": "Quests and Campaigns",
+    "name": "Quests and Campaigns"
+  },
+  {
+    "id": "Ranged Tactics Toolbox",
+    "name": "Ranged Tactics Toolbox"
+  },
+  {
+    "id": "Rival Guide",
+    "name": "Rival Guide"
+  },
+  {
+    "id": "RotRL-AE-Appendix",
+    "name": "RotRL-AE-Appendix"
+  },
+  {
+    "id": "Sargava",
+    "name": "Sargava"
+  },
+  {
+    "id": "Seekers of Secrets",
+    "name": "Seekers of Secrets"
+  },
+  {
+    "id": "Spymaster's Handbook",
+    "name": "Spymaster's Handbook"
+  },
+  {
+    "id": "Technology Guide",
+    "name": "Technology Guide"
+  },
+  {
+    "id": "The Dragon's Demand",
+    "name": "The Dragon's Demand"
+  },
+  {
+    "id": "The First World Realm Of The Fey",
+    "name": "The First World Realm Of The Fey"
+  },
+  {
+    "id": "The HarrowHandbook",
+    "name": "The HarrowHandbook"
+  },
+  {
+    "id": "Ultimate Combat",
+    "name": "Ultimate Combat"
+  },
+  {
+    "id": "Ultimate Intrigue",
+    "name": "Ultimate Intrigue"
+  },
+  {
+    "id": "Ultimate Magic",
+    "name": "Ultimate Magic"
+  },
+  {
+    "id": "Undead Slayer's Handbook",
+    "name": "Undead Slayer's Handbook"
+  },
+  {
+    "id": "Villain Codex",
+    "name": "Villain Codex"
+  }
+]

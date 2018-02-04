@@ -6,7 +6,7 @@ const presets = [
 
 
 const plugins = [
-  'transform-react-pure-class-to-function',
+  // 'transform-react-pure-class-to-function',
 ];
 
 

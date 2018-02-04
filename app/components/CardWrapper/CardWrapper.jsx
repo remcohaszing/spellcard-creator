@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Icon from '../Icon';
 
-import classes from './CardWrapper.css';
 import { downloadAsPDF, downloadAsPNG } from '../../util/download';
-import Card from './Card';
+import Icon from '../Icon';
+import Card from '../Card';
+import styles from './CardWrapper.css';
 
 
 export default class CardWrapper extends React.Component {
@@ -33,7 +33,7 @@ export default class CardWrapper extends React.Component {
 
     return (
       <div
-        className={classes.cardWrapper}
+        className={styles.cardWrapper}
         style={{
           width: `${width}in`,
           height: `${height}in`,
@@ -43,7 +43,7 @@ export default class CardWrapper extends React.Component {
           maxHeight: `${height}in`,
         }}
       >
-        <div className={classes.cardTools}>
+        <div className={styles.cardTools}>
           <button onClick={this.downloadAsPDF} title="Download as PDF">
             <Icon name="file-pdf-o" />
           </button>

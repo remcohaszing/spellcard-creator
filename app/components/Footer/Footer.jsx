@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { footer } from './index.css';
+import styles from './Footer.css';
 
 
 export default function Footer() {
   return (
-    <footer className={footer}>
+    <footer className={styles.root}>
       <a
         className="github-button"
         href="https://github.com/remcohaszing/spellcard-creator"

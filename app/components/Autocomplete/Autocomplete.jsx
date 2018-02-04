@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import loadFont from '../../util/loadFont';
-import { fontList, fontListClosed, option, root, input } from './AutoComplete.css';
+import styles from './Autocomplete.css';
 
 
 export default class FontPicker extends React.Component {
@@ -90,7 +90,7 @@ export default class FontPicker extends React.Component {
 
     return (
       <div
-        className={root}
+        className={styles.root}
         tabIndex={0}
         role="combobox"
         aria-expanded={typing}
@@ -101,18 +101,18 @@ export default class FontPicker extends React.Component {
         <input
           id={name}
           name={name}
-          className={input}
+          className={styles.input}
           value={search}
           onChange={this.onTyped}
         />
         <div
-          className={classNames(fontList, {
-            [fontListClosed]: !typing,
+          className={classNames(styles.fontList, {
+            [styles.fontListClosed]: !typing,
           })}
         >
           {matches.map(font => (
             <div
-              className={option}
+              className={styles.option}
               key={font.family}
               onClick={() => this.onSelected(font)}
               onKeyDown={() => this.onSelected(font)}

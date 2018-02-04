@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import classes from './Card.css';
-import Attribute from './Attribute';
+import styles from './Card.css';
+import CardAttribute from '../CardAttribute';
 
 
 export default class Card extends React.Component {
@@ -47,7 +47,7 @@ export default class Card extends React.Component {
 
     return (
       <div
-        className={classes.card}
+        className={styles.card}
         ref={innerRef}
         style={{
           backgroundImage: backgroundImage ? `url("${backgroundImage}")` : undefined,
@@ -57,7 +57,7 @@ export default class Card extends React.Component {
         }}
       >
         <section
-          className={classes.properties}
+          className={styles.properties}
           style={{
             backgroundColor,
             boxShadow: `inset 0 0 ${borderSize * 2}px ${borderSize}px ${borderColor}`,
@@ -65,7 +65,7 @@ export default class Card extends React.Component {
           }}
         >
           <h3
-            className={classes.header}
+            className={styles.header}
             style={{
               color: headerFont.color,
               fontFamily: headerFont.family,
@@ -75,7 +75,7 @@ export default class Card extends React.Component {
             {title}
           </h3>
           <h4
-            className={classes.level}
+            className={styles.level}
             style={{
               backgroundColor,
               boxShadow: `inset 0 0 ${borderSize * 2}px ${borderSize}px ${borderColor}`,
@@ -86,43 +86,43 @@ export default class Card extends React.Component {
           >
             {level}
           </h4>
-          <Attribute name="School" value={school} />
-          <Attribute name="Casting Time" value={time} />
-          <Attribute name="Duration" value={duration} />
-          <Attribute name="Components" value={components} />
-          <Attribute name="Effect" value={effect} />
-          <Attribute name="Range" value={range} />
-          <Attribute name="Saving Throw" value={save} />
-          <Attribute name="Area" value={area} />
-          <Attribute name="Spell Resistance" value={resist} />
-          <Attribute name="Target" value={target} />
+          <CardAttribute name="School" value={school} />
+          <CardAttribute name="Casting Time" value={time} />
+          <CardAttribute name="Duration" value={duration} />
+          <CardAttribute name="Components" value={components} />
+          <CardAttribute name="Effect" value={effect} />
+          <CardAttribute name="Range" value={range} />
+          <CardAttribute name="Saving Throw" value={save} />
+          <CardAttribute name="Area" value={area} />
+          <CardAttribute name="Spell Resistance" value={resist} />
+          <CardAttribute name="Target" value={target} />
         </section>
         <section
-          className={classes.descriptionWrapper}
+          className={styles.descriptionWrapper}
           style={{
             backgroundColor,
             boxShadow: `inset 0 0 ${borderSize * 2}px ${borderSize}px ${borderColor}`,
           }}
         >
           <div
-            className={classes.description}
+            className={styles.description}
             style={{
               padding: `${borderSize + 1}px`,
             }}
           >
             {table ? (
-              <table className={classes.summoningTable}>
+              <table className={styles.summoningTable}>
                 <tbody>
                   {table.map(({ name, subtype }) => (
                     <tr key={name}>
                       <td
-                        className={classes.summoningTableRow}
+                        className={styles.summoningTableRow}
                         style={{ borderColor }}
                       >
                         {name}
                       </td>
                       <td
-                        className={classes.summoningSubtype}
+                        className={styles.summoningSubtype}
                         style={{ borderColor }}
                       >
                         {subtype}
@@ -132,7 +132,7 @@ export default class Card extends React.Component {
                 </tbody>
               </table>
             ) : (
-              <div className={classes.descriptionInner}>
+              <div className={styles.descriptionInner}>
                 {description.map(paragraph => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}

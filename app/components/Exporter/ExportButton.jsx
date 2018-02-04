@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { card } from '../../Preview/Card.css';
-import { downloadAsPDF } from '../../../util/download';
-import Modal from '../../Modal';
+import { card } from '../Card/Card.css';
+import { downloadAsPDF } from '../../util/download';
+import Modal from '../Modal';
 
 
 export default class ExportButton extends React.Component {

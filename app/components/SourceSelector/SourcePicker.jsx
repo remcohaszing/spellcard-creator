@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import classes from './source-picker.css';
+import classes from './SourcePicker.css';
 
 
 export default class SourcePicker extends React.Component {

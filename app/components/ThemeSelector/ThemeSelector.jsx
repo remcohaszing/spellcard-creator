@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import ColorPicker from '../../ColorPicker';
-import ImagePicker from '../../ImagePicker';
-import Input from '../../Input';
-import FontPicker from '../../FontPicker';
+import ColorPicker from '../ColorPicker';
+import ImagePicker from '../ImagePicker';
+import Input from '../Input';
+import FontPicker from '../FontPicker';
 
 
 export default class ThemeSelector extends React.Component {

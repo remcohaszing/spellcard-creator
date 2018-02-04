@@ -1,9 +1,9 @@
 import React from 'react';
 
-import getThemeFromURL from '../util/getThemeFromURL';
-import { mapByClass } from '../util/spells';
-import Controls from './Controls';
-import Preview from './Preview';
+import getThemeFromURL from '../../util/getThemeFromURL';
+import { mapByClass } from '../../util/spells';
+import Controls from '../Controls';
+import Preview from '../Preview';
 
 
 export default class App extends React.Component {

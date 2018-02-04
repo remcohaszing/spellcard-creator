@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import classes from './index.css';
-import CardSelector from './CardSelector';
-import CollapsableView from './CollapsableView';
-import Exporter from './Exporter';
-import Footer from './Footer';
-import SourceSelector from './SourceSelector';
-import ThemeSelector from './ThemeSelector';
+import CardSelector from '../CardSelector';
+import CollapsableView from '../CollapsableView';
+import Exporter from '../Exporter';
+import Footer from '../Footer';
+import SourceSelector from '../SourceSelector';
+import ThemeSelector from '../ThemeSelector';
 
 
 export default class Controls extends React.Component {

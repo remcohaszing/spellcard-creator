@@ -6,6 +6,7 @@ const presets = [
 
 
 const plugins = [
+  '@babel/plugin-proposal-export-default-from',
   // 'transform-react-pure-class-to-function',
 ];
 

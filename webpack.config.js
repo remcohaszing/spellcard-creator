@@ -122,7 +122,7 @@ module.exports = {
   },
   devServer: {
     disableHostCheck: true,
-    host: '0.0.0.0',
+    host: 'localhost',
     port: 1337,
     noInfo: true,
   },

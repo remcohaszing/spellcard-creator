@@ -10,7 +10,7 @@ export default class App extends React.Component {
   state = {
     theme: getThemeFromURL(),
     selection: {},
-    sources: ['/pathfinderRPG/prd/coreRulebook'],
+    sources: ['PFRPG Core'],
     spellMap: {},
   };
 
@@ -54,6 +54,18 @@ export default class App extends React.Component {
     });
   };
 
+  onAllSourcesChange = ({books, value}) => {
+    const set = new Set(this.state.sources);
+    books.forEach(function(book) {
+      if (value) {
+        set.add(book.id);
+      } else {
+        set.delete(book.id);
+      }
+    });
+    this.setState({sources: Array.from(set).sort()});
+  }
+
   onThemeChange = (theme) => {
     this.setState({ theme });
   };
@@ -78,6 +90,7 @@ export default class App extends React.Component {
         key="controls"
         onSelectionChange={this.onSelectionChange}
         onSourcesChange={this.onSourcesChange}
+        onAllSourcesChange={this.onAllSourcesChange}
         onThemeChange={this.onThemeChange}
         selection={selection}
         sources={sources}

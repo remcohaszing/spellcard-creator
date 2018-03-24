@@ -10,6 +10,7 @@ export default class SourcePicker extends React.Component {
     name: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     sources: PropTypes.arrayOf(PropTypes.string).isRequired,
+    checked:PropTypes.bool
   };
 
   render() {
@@ -18,14 +19,23 @@ export default class SourcePicker extends React.Component {
       name,
       onChange,
       sources,
+      checked
     } = this.props;
+    
+    var selected = false;
+    if (checked != undefined){
+      selected = checked;
+    }
+    else {
+      selected = !!sources.includes(name);
+    }
 
     return (
       <label className={classes.sourcePicker} htmlFor={name}>
         <input
           id={name}
           type="checkbox"
-          checked={!!sources.includes(name)}
+          checked={selected}
           onChange={(event) => {
             onChange({
               name,

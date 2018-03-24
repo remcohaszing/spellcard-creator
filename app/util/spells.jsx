@@ -10,7 +10,7 @@ export function noop() {}
 export function mapByClass() {
   if (!mappedByClass) {
     mappedByClass = new Promise(async (resolve) => {
-      const response = await fetch(spellsURL);
+      const response = await fetch('../data/spells.json');
       const spells = await response.json();
       const result = {};
       spells.forEach((spell) => {

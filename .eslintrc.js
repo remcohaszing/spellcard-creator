@@ -15,5 +15,6 @@ module.exports = {
     'babel/no-invalid-this': 'error',
     'babel/semi': 'error',
     'jsx-a11y/label-has-for': 'off',
+    'linebreak-style': ['error', 'windows'],
   },
 };

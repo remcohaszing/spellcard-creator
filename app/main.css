@@ -1,14 +1,18 @@
 html,
 body {
+  color-adjust: exact;
   display: block;
   height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
+  -webkit-print-color-adjust: exact;
 }
 
-.root {
-  display: flex;
-  height: 100%;
-  width: 100%;
+:global(#app) {
+  @media not print {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
 }

@@ -10,7 +10,7 @@ export default class App extends React.Component {
   state = {
     theme: getThemeFromURL(),
     selection: {},
-    sources: ['/pathfinderRPG/prd/coreRulebook'],
+    sources: ['PFRPG Core'],
     spellMap: {},
   };
 

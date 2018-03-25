@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { downloadAsPDF, downloadAsPNG } from '../../util/download';
-import Icon from '../Icon';
 import Card from '../Card';
 import styles from './CardWrapper.css';
 
@@ -12,15 +10,6 @@ export default class CardWrapper extends React.Component {
     level: PropTypes.string.isRequired,
     spell: PropTypes.shape().isRequired,
     theme: PropTypes.shape().isRequired,
-  };
-
-  downloadAsPNG = () => {
-    downloadAsPNG(this.card, this.props.spell.title);
-  };
-
-  downloadAsPDF = () => {
-    const { spell, theme } = this.props;
-    downloadAsPDF([this.card], spell.title, theme);
   };
 
   ref = (card) => {
@@ -43,14 +32,7 @@ export default class CardWrapper extends React.Component {
           maxHeight: `${height}in`,
         }}
       >
-        <div className={styles.cardTools}>
-          <button onClick={this.downloadAsPDF} title="Download as PDF">
-            <Icon name="file-pdf-o" />
-          </button>
-          <button onClick={this.downloadAsPNG} title="Download as PNG">
-            <Icon name="file-image-o" />
-          </button>
-        </div>
+        <div className={styles.cardTools} />
         <Card
           innerRef={this.ref}
           level={level}

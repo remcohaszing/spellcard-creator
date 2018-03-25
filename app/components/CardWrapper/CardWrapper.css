@@ -30,13 +30,25 @@
       outline: none;
     }
   }
+
+  @media print {
+    display: none;
+  }
 }
 
 .card-wrapper {
-  margin: 10px;
   position: relative;
 
   &:hover .card-tools {
     opacity: 1;
+  }
+
+  @media not print {
+    margin: 10px;
+  }
+
+  @media print {
+    display: inline-block;
+    page-break-after: auto;
   }
 }

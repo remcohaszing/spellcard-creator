@@ -8,4 +8,10 @@
   justify-content: space-around;
   overflow-x: auto;
   overflow-y: scroll;
+
+  @media print {
+    background-color: #ffffff;
+    display: block;
+    overflow-y: hidden;
+  }
 }

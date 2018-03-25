@@ -8,6 +8,10 @@
   flex: 0 0 auto;
   flex-flow: column;
   width: 500px;
+
+  @media print {
+    display: none;
+  }
 }
 
 .controls {

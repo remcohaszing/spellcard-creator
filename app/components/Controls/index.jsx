@@ -14,6 +14,7 @@ export default class Controls extends React.Component {
   static propTypes = {
     onSelectionChange: PropTypes.func.isRequired,
     onSourcesChange: PropTypes.func.isRequired,
+    onAllSourcesChange: PropTypes.func.isRequired,
     onThemeChange: PropTypes.func.isRequired,
     selection: PropTypes.shape().isRequired,
     sources: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -25,6 +26,7 @@ export default class Controls extends React.Component {
     const {
       onSelectionChange,
       onSourcesChange,
+      onAllSourcesChange,
       onThemeChange,
       selection,
       sources,
@@ -38,6 +40,7 @@ export default class Controls extends React.Component {
           <CollapsableView name="Sources">
             <SourceSelector
               onChange={onSourcesChange}
+              onAllChange={onAllSourcesChange}
               sources={sources}
             />
           </CollapsableView>

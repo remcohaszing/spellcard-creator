@@ -1,14 +1,5 @@
 @value card-wrapper-icons, card-wrapper-shadow from '../../constants/colors.css';
 
-.card-wrapper {
-  margin: 10px;
-  position: relative;
-
-  &:hover .card-tools {
-    opacity: 1;
-  }
-}
-
 .card-tools {
   background: linear-gradient(card-wrapper-shadow, rgba(0, 0, 0, 0));
   left: 0;
@@ -38,5 +29,14 @@
     &:focus {
       outline: none;
     }
+  }
+}
+
+.card-wrapper {
+  margin: 10px;
+  position: relative;
+
+  &:hover .card-tools {
+    opacity: 1;
   }
 }

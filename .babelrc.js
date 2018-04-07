@@ -1,25 +1,25 @@
-const presets = [
-  ['@babel/env', { modules: false }],
-  '@babel/stage-0',
-  '@babel/react',
-];
+module.exports = (api) => {
+  const presets = [
+    ['@babel/env', { modules: false }],
+    '@babel/stage-0',
+    '@babel/react',
+  ];
 
 
-const plugins = [
-  '@babel/plugin-proposal-export-default-from',
-  // 'transform-react-pure-class-to-function',
-];
+  const plugins = [
+    '@babel/plugin-proposal-export-default-from',
+    // 'transform-react-pure-class-to-function',
+  ];
 
+  if (api.env() === 'production') {
+    plugins.push(
+      '@babel/transform-react-inline-elements',
+      'transform-react-remove-prop-types',
+    );
+  }
 
-if (process.env.NODE_ENV === 'production') {
-  plugins.push(
-    '@babel/transform-react-inline-elements',
-    'transform-react-remove-prop-types',
-  );
-}
-
-
-module.exports = {
-  presets,
-  plugins,
+  return {
+    presets,
+    plugins,
+  };
 };

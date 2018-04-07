@@ -1,4 +1,4 @@
-import spellsURL from '../../data/spells.json';
+import spellsURL from '../../data/spells.csv';
 
 
 let mappedByClass;

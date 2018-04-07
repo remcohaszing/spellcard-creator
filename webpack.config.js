@@ -112,10 +112,17 @@ module.exports = {
         loader: 'file-loader',
       },
       {
-        test: /\/data\//,
+        test: /\/spells\.csv$/,
         use: [
-          { loader: 'file-loader' },
-          { loader: 'minify-json-loader' },
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[hash].json',
+            },
+          },
+          { loader: 'stringify-json-loader' },
+          { loader: 'spells-loader' },
+          { loader: 'csv-loader' },
         ],
       },
     ],

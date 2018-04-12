@@ -5,17 +5,9 @@
 }
 
 .collapse-button {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  cursor: pointer;
-  display: inline-block;
   height: button-size;
   transition: transform 0.3s;
   width: button-size;
-
-  &::after {
-    content: '▼';
-  }
 }
 
 .collapse-button-collapsed {

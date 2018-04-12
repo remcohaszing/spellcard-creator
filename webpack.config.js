@@ -101,7 +101,6 @@ module.exports = (env, { mode }) => {
       disableHostCheck: true,
       host: '0.0.0.0',
       port: 1337,
-      noInfo: true,
     },
     plugins: [
       new HtmlWebpackPlugin({

@@ -66,24 +66,24 @@ export default class App extends React.Component {
       theme,
     } = this.state;
 
-    return [
-      <Preview
-        key="preview"
-        selection={selection}
-        sources={sources}
-        spellMap={spellMap}
-        theme={theme}
-      />,
-      <Controls
-        key="controls"
-        onSelectionChange={this.onSelectionChange}
-        onSourcesChange={this.onSourcesChange}
-        onThemeChange={this.onThemeChange}
-        selection={selection}
-        sources={sources}
-        spellMap={spellMap}
-        theme={theme}
-      />,
-    ];
+    return (
+      <React.Fragment>
+        <Preview
+          selection={selection}
+          sources={sources}
+          spellMap={spellMap}
+          theme={theme}
+        />
+        <Controls
+          onSelectionChange={this.onSelectionChange}
+          onSourcesChange={this.onSourcesChange}
+          onThemeChange={this.onThemeChange}
+          selection={selection}
+          sources={sources}
+          spellMap={spellMap}
+          theme={theme}
+        />
+      </React.Fragment>
+    );
   }
 }

@@ -1,0 +1,46 @@
+.arm {
+  fill: #eeeeee;
+  transform-origin: 130px 106px;
+}
+
+.body {
+  fill: #eeeeee;
+}
+
+.root {
+  fill: #151513;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+
+  &:hover .arm {
+    animation: wave 560ms ease-in-out;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-25deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  80% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

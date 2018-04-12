@@ -6,16 +6,6 @@ import styles from './Footer.css';
 export default function Footer() {
   return (
     <footer className={styles.root}>
-      <a
-        className="github-button"
-        href="https://github.com/remcohaszing/spellcard-creator"
-        data-icon="octicon-star"
-        data-size="large"
-        data-show-count="true"
-        aria-label="Star remcohaszing/spellcard-creator on GitHub"
-      >
-        Star
-      </a>
       <p>
         This website uses trademarks and/or copyrights owned by Paizo Inc., which are used under
         Paizo’s Community Use Policy. We are expressly prohibited from charging you to use or access

@@ -3,6 +3,7 @@ import React from 'react';
 import getThemeFromURL from '../../util/getThemeFromURL';
 import { mapByClass } from '../../util/spells';
 import Controls from '../Controls';
+import GitHubCorner from '../GitHubCorner';
 import Preview from '../Preview';
 
 
@@ -83,6 +84,7 @@ export default class App extends React.Component {
           spellMap={spellMap}
           theme={theme}
         />
+        <GitHubCorner />
       </React.Fragment>
     );
   }

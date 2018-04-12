@@ -13,7 +13,6 @@ export default class IconButton extends React.Component {
 
   static defaultProps = {
     className: null,
-    type: 'button',
   };
 
   render() {

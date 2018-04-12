@@ -31,7 +31,7 @@ export default class SourceSelector extends React.Component {
     });
   };
 
-  onDelete = (event, value) => {
+  onDelete = (event) => {
     const {
       onChange,
     } = this.props;

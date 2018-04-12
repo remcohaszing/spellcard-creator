@@ -1,0 +1,10 @@
+.root {
+  border-style: none;
+  cursor: pointer;
+  padding: 8px;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

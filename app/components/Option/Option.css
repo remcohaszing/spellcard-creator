@@ -1,0 +1,10 @@
+@value searchbox-results, searchbox-results-hover from '../../constants/colors.css';
+
+.root {
+  cursor: pointer;
+  background-color: searchbox-results;
+
+  &:hover {
+    background-color: searchbox-results-hover;
+  }
+}

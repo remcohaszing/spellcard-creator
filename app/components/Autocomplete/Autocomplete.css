@@ -1,4 +1,4 @@
-@value searchbox-input, searchbox-results, searchbox-results-hover from '../../constants/colors.css';
+@value searchbox-input from '../../constants/colors.css';
 @value width: 200px;
 
 .root {
@@ -23,17 +23,9 @@
   width: width;
   transition: max-height 0.1s;
   position: absolute;
+  z-index: 10;
 
   &.font-list-closed {
     max-height: 0;
-  }
-}
-
-.option {
-  cursor: pointer;
-  background-color: searchbox-results;
-
-  &:hover {
-    background-color: searchbox-results-hover;
   }
 }

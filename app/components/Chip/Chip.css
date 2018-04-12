@@ -1,0 +1,11 @@
+.root {
+  background-color: #57554f;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 2px;
+  padding: 2px 8px;
+}
+
+.button {
+  margin-left: 8px;
+}

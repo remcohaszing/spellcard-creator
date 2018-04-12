@@ -5,6 +5,7 @@ import React from 'react';
 import getWebFonts from '../../util/getWebFonts';
 import AutoComplete from '../Autocomplete';
 import ColorPicker from '../ColorPicker';
+import Option from '../Option';
 
 
 export default class FontPicker extends React.Component {
@@ -22,7 +23,7 @@ export default class FontPicker extends React.Component {
     const choices = await getWebFonts();
 
     this.setState({
-      choices,
+      choices: choices.map(choice => choice.family),
     });
   }
 
@@ -41,7 +42,7 @@ export default class FontPicker extends React.Component {
     });
   };
 
-  isMatch = (search, { family }) => fuzzysearch(search.toLowerCase(), family.toLowerCase());
+  isMatch = (search, family) => fuzzysearch(search.toLowerCase(), family.toLowerCase());
 
   render() {
     const {
@@ -65,7 +66,16 @@ export default class FontPicker extends React.Component {
           isMatch={this.isMatch}
           onChange={this.onChange}
           value={value.family}
-        />
+        >
+          {choices.map(choice => (
+            <Option
+              key={choice}
+              value={choice}
+            >
+              {choice}
+            </Option>
+            ))}
+        </AutoComplete>
         <input
           name={`${name}.size`}
           type="number"

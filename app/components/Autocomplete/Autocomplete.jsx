@@ -2,13 +2,12 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import loadFont from '../../util/loadFont';
 import styles from './Autocomplete.css';
 
 
-export default class FontPicker extends React.Component {
+export default class Autocomplete extends React.Component {
   static propTypes = {
-    choices: PropTypes.arrayOf(PropTypes.any).isRequired,
+    children: PropTypes.node.isRequired,
     isMatch: PropTypes.func.isRequired,
     name: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
@@ -16,24 +15,12 @@ export default class FontPicker extends React.Component {
   };
 
   state = {
-    matches: [],
+    matches: React.Children.map(child => (
+      this.props.isMatch(this.props.value, child.value) ? child : null
+    )),
     search: this.props.value,
     typing: false,
   };
-
-  async componentWillMount() {
-    const {
-      choices,
-      isMatch,
-    } = this.props;
-    const { search } = this.state;
-
-    const matches = choices.filter(choice => isMatch(search, choice));
-
-    this.setState({
-      matches,
-    });
-  }
 
   componentWillReceiveProps(nextProps) {
     const { value } = this.props;
@@ -63,12 +50,14 @@ export default class FontPicker extends React.Component {
 
   onTyped = async (event) => {
     const {
-      choices,
+      children,
       isMatch,
     } = this.props;
     const { value } = event.target;
 
-    const matches = choices.filter(choice => isMatch(value, choice));
+    const matches = React.Children.map(children, child => (
+      isMatch(value, child.props.value) ? child : null
+    ));
 
     this.setState({
       matches,
@@ -77,11 +66,10 @@ export default class FontPicker extends React.Component {
     });
   };
 
-  onSelected = async ({ family }) => {
+  onSelected = async (event, value) => {
     const { name, onChange } = this.props;
 
-    await loadFont(family);
-    onChange({ target: { name } }, family);
+    onChange({ target: { name } }, value);
   };
 
   render() {
@@ -110,17 +98,10 @@ export default class FontPicker extends React.Component {
             [styles.fontListClosed]: !typing,
           })}
         >
-          {matches.map(font => (
-            <div
-              className={styles.option}
-              key={font.family}
-              onClick={() => this.onSelected(font)}
-              onKeyDown={() => this.onSelected(font)}
-              role="menuitem"
-              tabIndex={0}
-            >
-              {font.family}
-            </div>
+          {React.Children.map(matches, match => (
+            match && React.cloneElement(match, {
+              onSelect: this.onSelected,
+            })
           ))}
         </div>
       </div>

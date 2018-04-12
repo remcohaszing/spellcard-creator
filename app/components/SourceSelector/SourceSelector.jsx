@@ -1,8 +1,17 @@
+import fuzzysearch from 'fuzzysearch';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import Autocomplete from '../Autocomplete';
+import Chip from '../Chip';
+import Option from '../Option';
 import books from './sources.json';
-import SourcePicker from './SourcePicker';
+
+
+function isMatch(search, { name }) {
+  const result = fuzzysearch(search.toLowerCase(), name.toLowerCase());
+  return result;
+}
 
 
 export default class SourceSelector extends React.Component {
@@ -11,19 +20,55 @@ export default class SourceSelector extends React.Component {
     sources: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
 
+  onSelected = (event, value) => {
+    const {
+      onChange,
+    } = this.props;
+
+    onChange({
+      name: value.id,
+      value: true,
+    });
+  };
+
+  onDelete = (event, value) => {
+    const {
+      onChange,
+    } = this.props;
+
+    onChange({
+      name: event.target.name,
+      value: false,
+    });
+  };
+
   render() {
-    const { onChange, sources } = this.props;
+    const { sources } = this.props;
 
     return (
       <form>
-        {books.map(source => (
-          <SourcePicker
-            name={source.id}
-            onChange={onChange}
-            sources={sources}
-            label={source.name}
-          />
+        <div>
+          {books.filter(book => sources.includes(book.id)).map(book => (
+            <Chip key={book.id} name={book.id} onClose={this.onDelete}>
+              {book.name}
+            </Chip>
         ))}
+        </div>
+        <Autocomplete
+          name="Books"
+          isMatch={isMatch}
+          onChange={this.onSelected}
+          value=""
+        >
+          {books.map(book => (
+            <Option
+              key={book.id}
+              value={book}
+            >
+              {book.name}
+            </Option>
+          ))}
+        </Autocomplete>
       </form>
     );
   }

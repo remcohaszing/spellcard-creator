@@ -1,0 +1,11 @@
+.root {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

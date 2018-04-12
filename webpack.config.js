@@ -32,9 +32,7 @@ module.exports = (env, { mode }) => {
 
 
   return {
-    entry: path.resolve(__dirname, 'app/main.jsx'),
     output: {
-      path: path.resolve(__dirname, 'build'),
       filename: '[hash].js',
     },
     resolve: {
@@ -52,9 +50,6 @@ module.exports = (env, { mode }) => {
           options: {
             envName: mode,
           },
-          include: [
-            path.resolve(__dirname, 'app'),
-          ],
         },
         {
           test: /\.css$/,
@@ -104,7 +99,7 @@ module.exports = (env, { mode }) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'app/index.html'),
+        template: path.resolve(__dirname, 'src/index.html'),
         minify: {
           collapseWhitespace: true,
           removeAttributeQuotes: true,

@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --mode development",
     "test": "run-p -c eslint stylelint",
     "eslint": "eslint --max-warnings 0 --ext js,jsx .",
-    "stylelint": "stylelint 'app/**/*.css'",
+    "stylelint": "stylelint 'src/{**/,}*.css'",
     "build": "webpack --mode production"
   },
   "author": "Remco Haszing <remcohaszing@gmail.com>",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import './main.css';
+import './index.css';
 import App from './components/App';
 import loadFont from './util/loadFont';
 

@@ -21,7 +21,7 @@ npm install
 
 ### Starting
 
-The following command will start a development server on http://0.0.0.0:1337.
+The following command will start a development server on http://localhost:1337.
 
 ```
 npm start

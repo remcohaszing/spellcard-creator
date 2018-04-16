@@ -10,3 +10,6 @@ trim_trailing_whitespace = true
 
 [COMMIT_EDITMSG]
 max_line_length = 72
+
+[*.csv]
+end_of_line = crlf

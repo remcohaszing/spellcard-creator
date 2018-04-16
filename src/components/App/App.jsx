@@ -5,13 +5,14 @@ import { mapByClass } from '../../util/spells';
 import Controls from '../Controls';
 import GitHubCorner from '../GitHubCorner';
 import Preview from '../Preview';
+import allSources from '../SourceSelector/sources.json';
 
 
 export default class App extends React.Component {
   state = {
     theme: getThemeFromURL(),
     selection: {},
-    sources: ['PFRPG Core'],
+    sources: [allSources.find(source => source.id === 'PFRPG Core')],
     spellMap: {},
   };
 
@@ -43,15 +44,9 @@ export default class App extends React.Component {
     });
   };
 
-  onSourcesChange = ({ name, value }) => {
-    const set = new Set(this.state.sources);
-    if (value) {
-      set.add(name);
-    } else {
-      set.delete(name);
-    }
+  onSourcesChange = (event, value) => {
     this.setState({
-      sources: Array.from(set).sort(),
+      sources: value,
     });
   };
 

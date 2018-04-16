@@ -5,7 +5,7 @@ import React from 'react';
 import Autocomplete from '../Autocomplete';
 import Chip from '../Chip';
 import Option from '../Option';
-import books from './sources.json';
+import allSources from './sources.json';
 
 
 function isMatch(search, { name }) {
@@ -17,29 +17,25 @@ function isMatch(search, { name }) {
 export default class SourceSelector extends React.Component {
   static propTypes = {
     onChange: PropTypes.func.isRequired,
-    sources: PropTypes.arrayOf(PropTypes.string).isRequired,
+    sources: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   };
 
   onSelected = (event, value) => {
     const {
       onChange,
+      sources,
     } = this.props;
 
-    onChange({
-      name: value.id,
-      value: true,
-    });
+    onChange(event, [...sources, value]);
   };
 
-  onDelete = (event) => {
+  onDelete = (event, value) => {
     const {
       onChange,
+      sources,
     } = this.props;
 
-    onChange({
-      name: event.target.name,
-      value: false,
-    });
+    onChange(event, sources.filter(source => source !== value));
   };
 
   render() {
@@ -48,8 +44,8 @@ export default class SourceSelector extends React.Component {
     return (
       <form>
         <div>
-          {books.filter(book => sources.includes(book.id)).map(book => (
-            <Chip key={book.id} name={book.id} onClose={this.onDelete}>
+          {sources.map(book => (
+            <Chip key={book.id} name={book.id} onClose={this.onDelete} value={book}>
               {book.name}
             </Chip>
         ))}
@@ -60,7 +56,7 @@ export default class SourceSelector extends React.Component {
           onChange={this.onSelected}
           value=""
         >
-          {books.map(book => (
+          {allSources.filter(source => !sources.includes(source)).map(book => (
             <Option
               key={book.id}
               value={book}

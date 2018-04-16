@@ -16,7 +16,7 @@ export default class Controls extends React.Component {
     onSourcesChange: PropTypes.func.isRequired,
     onThemeChange: PropTypes.func.isRequired,
     selection: PropTypes.shape().isRequired,
-    sources: PropTypes.arrayOf(PropTypes.string).isRequired,
+    sources: PropTypes.arrayOf(PropTypes.shape()).isRequired,
     spellMap: PropTypes.shape().isRequired,
     theme: PropTypes.shape().isRequired,
   };

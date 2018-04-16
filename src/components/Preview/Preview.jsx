@@ -8,7 +8,7 @@ import CardWrapper from '../CardWrapper';
 export default class Preview extends React.Component {
   static propTypes = {
     selection: PropTypes.shape().isRequired,
-    sources: PropTypes.arrayOf(PropTypes.string).isRequired,
+    sources: PropTypes.arrayOf(PropTypes.shape()).isRequired,
     spellMap: PropTypes.shape().isRequired,
     theme: PropTypes.shape().isRequired,
   };
@@ -48,7 +48,7 @@ export default class Preview extends React.Component {
             .filter(([level]) => selection[cls][level])
             .map(([level, spells]) => (
               spells
-                .filter(spell => sources.includes(spell.source))
+                .filter(spell => sources.find(source => source.id === spell.source))
                 .map(spell => (
                   <CardWrapper
                     key={spell.title}

@@ -10,13 +10,22 @@ export default class Chip extends React.Component {
     children: PropTypes.node.isRequired,
     name: PropTypes.string.isRequired,
     onClose: PropTypes.func.isRequired,
+    value: PropTypes.shape().isRequired,
+  };
+
+  onClose = (event) => {
+    const {
+      onClose,
+      value,
+    } = this.props;
+
+    onClose(event, value);
   };
 
   render() {
     const {
       children,
       name,
-      onClose,
     } = this.props;
 
     return (
@@ -26,7 +35,7 @@ export default class Chip extends React.Component {
           icon="close"
           className={styles.button}
           name={name}
-          onClick={onClose}
+          onClick={this.onClose}
         />
       </div>
     );

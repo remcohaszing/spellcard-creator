@@ -35,7 +35,6 @@ export default class SourcePicker extends React.Component {
         />
         {label}
       </label>
-
     );
   }
 }

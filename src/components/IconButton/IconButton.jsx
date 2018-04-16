@@ -9,10 +9,12 @@ export default class IconButton extends React.Component {
   static propTypes = {
     className: PropTypes.string,
     icon: PropTypes.string.isRequired,
+    type: PropTypes.string,
   };
 
   static defaultProps = {
     className: null,
+    type: 'button',
   };
 
   render() {

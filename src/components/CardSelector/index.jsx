@@ -1,1 +1,1 @@
-export default from './CardSelector';
+export { default } from './CardSelector';

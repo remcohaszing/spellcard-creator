@@ -1,1 +1,1 @@
-export default from './CollapsableView';
+export { default } from './CollapsableView';

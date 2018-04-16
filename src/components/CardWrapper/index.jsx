@@ -1,1 +1,1 @@
-export default from './CardWrapper';
+export { default } from './CardWrapper';

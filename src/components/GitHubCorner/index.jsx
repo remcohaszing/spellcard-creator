@@ -1,1 +1,1 @@
-export default from './GitHubCorner';
+export { default } from './GitHubCorner';

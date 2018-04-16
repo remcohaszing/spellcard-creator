@@ -1,1 +1,1 @@
-export default from './FontPicker';
+export { default } from './FontPicker';

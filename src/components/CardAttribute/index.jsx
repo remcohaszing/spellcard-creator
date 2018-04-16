@@ -1,1 +1,1 @@
-export default from './CardAttribute';
+export { default } from './CardAttribute';

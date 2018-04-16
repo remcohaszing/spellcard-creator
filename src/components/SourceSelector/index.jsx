@@ -1,1 +1,1 @@
-export default from './SourceSelector';
+export { default } from './SourceSelector';

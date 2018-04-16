@@ -1,8 +1,8 @@
 module.exports = (api) => {
   const presets = [
-    ['@babel/env', { modules: false }],
-    '@babel/stage-0',
-    '@babel/react',
+    ['@babel/env', { loose: true, modules: false }],
+    ['@babel/stage-0', { loose: true }],
+    ['@babel/react', { loose: true }],
   ];
 
 

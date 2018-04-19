@@ -14,6 +14,10 @@ module.exports = (api) => {
     plugins.push(
       '@babel/transform-react-inline-elements',
       'transform-react-remove-prop-types',
+      ['@babel/plugin-transform-runtime', {
+        useBuiltIns: true,
+        useESModules: true,
+      }],
     );
   }
 

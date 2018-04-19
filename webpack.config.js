@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const incstr = require('incstr');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 
 module.exports = (env, { mode }) => {
@@ -110,6 +111,18 @@ module.exports = (env, { mode }) => {
         },
       }),
       new ExtractTextPlugin('[hash].css'),
+      new WebpackPwaManifest({
+        name: 'Spellcard Generator',
+        short_name: 'Spellcards',
+        description: 'Test',
+        background_color: '#8b6f12',
+        theme_color: '#756408',
+        start_url: '.',
+        icons: [{
+          src: path.join(__dirname, 'src/icon.svg'),
+          sizes: [256, 512],
+        }],
+      }),
       new WebpackCleanupPlugin({
         quiet: true,
       }),

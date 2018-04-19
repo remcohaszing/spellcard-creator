@@ -14,6 +14,10 @@
   top: 0;
   width: 80px;
 
+  @media print {
+    display: none;
+  }
+
   &:hover .arm {
     animation: wave 560ms ease-in-out;
   }

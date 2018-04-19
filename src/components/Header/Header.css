@@ -1,0 +1,20 @@
+@value header-background, header-shadow from '../../constants/colors.css';
+
+.root {
+  background-color: header-background;
+  box-shadow: 0 3px 6px 0 header-shadow;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 10px 16px;
+  z-index: 1;
+
+  @media print {
+    display: none;
+  }
+}
+
+.title {
+  flex: 1;
+  font-size: 2rem;
+  margin: 0;
+}

@@ -9,6 +9,10 @@
   overflow-x: auto;
   overflow-y: scroll;
 
+  @media (max-width: 600px) {
+    flex: 1 0 100%;
+  }
+
   @media print {
     background-color: #ffffff;
     display: block;

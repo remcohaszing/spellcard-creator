@@ -7,7 +7,20 @@
   background-color: controls-background;
   flex: 0 0 auto;
   flex-flow: column;
-  width: 500px;
+  max-width: 480px;
+  overflow: hidden;
+  position: relative;
+  transition: 500ms;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    max-width: 600px;
+    left: -100%;
+
+    &.closed {
+      left: 0;
+    }
+  }
 
   @media print {
     display: none;

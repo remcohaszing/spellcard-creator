@@ -6,6 +6,12 @@
 @value card-wrapper-icons: #ffffff;
 
 /**
+ * Header
+ */
+@value header-background: #9a8b7a;
+@value header-shadow: #000000;
+
+/**
  * Controls
  */
 @value controls-background: #ab9e90;

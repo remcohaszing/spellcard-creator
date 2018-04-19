@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -12,6 +13,7 @@ import ThemeSelector from '../ThemeSelector';
 
 export default class Controls extends React.Component {
   static propTypes = {
+    menuOpen: PropTypes.bool.isRequired,
     onSelectionChange: PropTypes.func.isRequired,
     onSourcesChange: PropTypes.func.isRequired,
     onThemeChange: PropTypes.func.isRequired,
@@ -23,6 +25,7 @@ export default class Controls extends React.Component {
 
   render() {
     const {
+      menuOpen,
       onSelectionChange,
       onSourcesChange,
       onThemeChange,
@@ -33,7 +36,11 @@ export default class Controls extends React.Component {
     } = this.props;
 
     return (
-      <div className={classes.sideBar}>
+      <div
+        className={classNames(classes.sideBar, {
+          [classes.closed]: !menuOpen,
+        })}
+      >
         <div className={classes.controls}>
           <CollapsableView name="Sources">
             <SourceSelector

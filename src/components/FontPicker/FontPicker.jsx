@@ -36,10 +36,22 @@ export default class FontPicker extends React.Component {
 
     const [, key] = event.target.name.match(/(\w+)$/);
 
-    onChange({ target: { name } }, {
-      ...value,
-      [key]: val || event.target.value,
-    });
+    function onLoad() {
+      onChange({ target: { name } }, {
+        ...value,
+        [key]: val || event.target.value,
+      });
+    }
+    const url = `https://fonts.googleapis.com/css?family=${val.replace(/ /g, '+')}`;
+    if (!document.head.querySelector(`link[href="${url}"]`)) {
+      const element = document.createElement('link');
+      element.href = url;
+      element.rel = 'stylesheet';
+      element.addEventListener('load', onLoad);
+      document.head.appendChild(element);
+    } else {
+      onLoad();
+    }
   };
 
   isMatch = (search, family) => fuzzysearch(search.toLowerCase(), family.toLowerCase());

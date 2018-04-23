@@ -1,6 +1,9 @@
 .root {
   border-style: none;
   cursor: pointer;
+  display: block;
+  margin: 8px auto;
+  min-width: 10em;
   padding: 8px;
 
   &:active,

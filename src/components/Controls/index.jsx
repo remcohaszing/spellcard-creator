@@ -5,7 +5,7 @@ import React from 'react';
 import classes from './index.css';
 import CardSelector from '../CardSelector';
 import CollapsableView from '../CollapsableView';
-import Exporter from '../Exporter';
+import ExportButton from '../ExportButton';
 import Footer from '../Footer';
 import SourceSelector from '../SourceSelector';
 import ThemeSelector from '../ThemeSelector';
@@ -61,11 +61,7 @@ export default class Controls extends React.Component {
               theme={theme}
             />
           </CollapsableView>
-          <CollapsableView name="Export" >
-            <Exporter
-              theme={theme}
-            />
-          </CollapsableView>
+          <ExportButton />
         </div>
         <Footer />
       </div>

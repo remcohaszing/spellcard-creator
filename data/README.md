@@ -24,7 +24,7 @@ This document describes the raw data as it is defined in the CSV files. The CSV 
 | range                | `string`  | The spell range as it appears on https://paizo.com.
 | area                 | `string`  | The spell area as it appears on https://paizo.com.
 | effect               | `string`  |
-| targets              | `string`  |
+| targets              | `string`  | The spell target(s) as it appears on https://paizo.com.
 | duration             | `string`  | The spell duration as it appears on https://paizo.com.
 | dismissible          | `boolean` |
 | shapeable            | `boolean` |

@@ -57,6 +57,7 @@ module.exports = function spellsLoader(value) {
       school: getString(col.school),
       source: getString(col.source),
       subschool: getString(col.subschool),
+      target: getString(col.targets),
       time: getString(col.casting_time),
       title: getString(col.name),
     }));

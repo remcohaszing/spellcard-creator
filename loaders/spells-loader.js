@@ -15,10 +15,35 @@ function getNumber(value) {
 }
 
 
+function getBoolean(value) {
+  if (value === '0') {
+    return undefined;
+  }
+  return true;
+}
+
+
+function getAlignment(col) {
+  let alignment = '';
+  if (getBoolean(col.chaotic)) {
+    alignment += 'C';
+  } else if (getBoolean(col.lawful)) {
+    alignment += 'L';
+  }
+  if (getBoolean(col.good)) {
+    alignment += 'G';
+  } else if (getBoolean(col.evil)) {
+    alignment += 'E';
+  }
+  return alignment || undefined;
+}
+
+
 module.exports = function spellsLoader(value) {
   return value
     .sort((a, b) => (a.name < b.name ? -1 : 1))
     .map(col => ({
+      alignment: getAlignment(col),
       area: getString(col.area),
       components: getString(col.components),
       description: getString(col.description).split(/\s{2,}/g),

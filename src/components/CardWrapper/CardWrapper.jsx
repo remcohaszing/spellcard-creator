@@ -7,7 +7,7 @@ import styles from './CardWrapper.css';
 
 export default class CardWrapper extends React.Component {
   static propTypes = {
-    level: PropTypes.string.isRequired,
+    level: PropTypes.number.isRequired,
     spell: PropTypes.shape().isRequired,
     theme: PropTypes.shape().isRequired,
   };

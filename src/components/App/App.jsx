@@ -14,36 +14,23 @@ export default class App extends React.Component {
   state = {
     menuOpen: false,
     theme: getThemeFromURL(),
-    selection: {},
+    selection: {
+      druid: { levels: [0] },
+    },
     sources: [allSources.find(source => source.id === 'PFRPG Core')],
     spellMap: {},
   };
 
   async componentWillMount() {
     const spellMap = await mapByClass();
-    const selection = {};
-    Object.entries(spellMap).forEach(([cls, levels]) => {
-      selection[cls] = {};
-      Object.keys(levels).forEach((level) => {
-        selection[cls][level] = false;
-      });
-    });
-    selection.druid['2'] = true;
     this.setState({
       spellMap,
-      selection,
     });
   }
 
-  onSelectionChange = ({ cls, level, value }) => {
+  onSelectionChange = (event, value) => {
     this.setState({
-      selection: {
-        ...this.state.selection,
-        [cls]: {
-          ...this.state.selection[cls],
-          [level]: value,
-        },
-      },
+      selection: value,
     });
   };
 

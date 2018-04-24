@@ -43,11 +43,12 @@ export default class Preview extends React.Component {
 
     return (
       <div className={classes.preview}>
-        {Object.entries(spellMap).map(([cls, levels]) => (
-          Object.entries(levels)
-            .filter(([level]) => selection[cls][level])
-            .map(([level, spells]) => (
-              spells
+        {Object.keys(spellMap).length === 0 ? (
+          null
+        ) : (
+          Object.entries(selection).map(([cls, definition]) => (
+            definition.levels.map(level => (
+              spellMap[cls][level]
                 .filter(spell => sources.find(source => source.id === spell.source))
                 .map(spell => (
                   <CardWrapper
@@ -62,7 +63,8 @@ export default class Preview extends React.Component {
                   />
                 ))
             ))
-        ))}
+          ))
+        )}
       </div>
     );
   }

@@ -8,7 +8,7 @@ import CardAttribute from '../CardAttribute';
 export default class Card extends React.Component {
   static propTypes = {
     innerRef: PropTypes.func.isRequired,
-    level: PropTypes.string.isRequired,
+    level: PropTypes.number.isRequired,
     spell: PropTypes.shape().isRequired,
     theme: PropTypes.shape().isRequired,
   };

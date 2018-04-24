@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import CardSelector from '../CardSelector';
+import ClassSelector from '../ClassSelector';
 import CollapsableView from '../CollapsableView';
 import ExportButton from '../ExportButton';
 import Footer from '../Footer';
@@ -19,7 +19,6 @@ export default class Controls extends React.Component {
     onThemeChange: PropTypes.func.isRequired,
     selection: PropTypes.shape().isRequired,
     sources: PropTypes.arrayOf(PropTypes.shape()).isRequired,
-    spellMap: PropTypes.shape().isRequired,
     theme: PropTypes.shape().isRequired,
   };
 
@@ -31,7 +30,6 @@ export default class Controls extends React.Component {
       onThemeChange,
       selection,
       sources,
-      spellMap,
       theme,
     } = this.props;
 
@@ -49,10 +47,9 @@ export default class Controls extends React.Component {
             />
           </CollapsableView>
           <CollapsableView name="Selection">
-            <CardSelector
+            <ClassSelector
               onChange={onSelectionChange}
-              selection={selection}
-              spellMap={spellMap}
+              value={selection}
             />
           </CollapsableView>
           <CollapsableView name="Theme" >

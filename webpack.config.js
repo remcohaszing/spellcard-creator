@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const incstr = require('incstr');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const { GenerateSW } = require('workbox-webpack-plugin');
 
 
 module.exports = (env, { mode }) => {
@@ -129,6 +130,13 @@ module.exports = (env, { mode }) => {
       }),
       new WebpackCleanupPlugin({
         quiet: true,
+      }),
+      new GenerateSW({
+        cacheId: 'spellcard-creator',
+        runtimeCaching: [{
+          urlPattern: /^https:\/\/fonts.(?:googleapis|gstatic).com\/(.*)/,
+          handler: 'cacheFirst',
+        }],
       }),
     ],
   };

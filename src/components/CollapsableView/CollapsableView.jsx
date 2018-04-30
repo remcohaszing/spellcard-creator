@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import CaretIcon from '../CaretIcon';
 import IconButton from '../IconButton';
 import classes from './CollapsableView.css';
 
@@ -29,12 +30,14 @@ export default class CollapsableView extends React.Component {
       <div>
         <header>
           <IconButton
+            aria-label={`Toggle ${name}`}
             className={classNames(classes.collapseButton, {
-              [classes.collapseButtonCollapsed]: collapsed,
+              [classes.collapseButtonOpen]: !collapsed,
             })}
-            icon="caret-down"
             onClick={this.toggle}
-          />
+          >
+            <CaretIcon />
+          </IconButton>
           <h2 className={classes.header}>{name}</h2>
         </header>
         <div className={classNames(classes.content, {

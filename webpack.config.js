@@ -74,7 +74,11 @@ module.exports = (env, { mode }) => {
           }),
         },
         {
-          test: /\.(eot|svg|ttf|woff2?)$/,
+          test: /\.svg$/,
+          loader: 'svgr/webpack',
+        },
+        {
+          test: /\.(eot|ttf|woff2?)$/,
           loader: 'file-loader',
         },
         {

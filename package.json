@@ -50,6 +50,7 @@
     "stylelint": "^9.2.0",
     "stylelint-config-css-modules": "^1.2.0",
     "stylelint-config-standard": "^18.2.0",
+    "svgr": "^1.9.1",
     "webpack": "^4.5.0",
     "webpack-cleanup-plugin": "^0.5.1",
     "webpack-cli": "^2.0.14",

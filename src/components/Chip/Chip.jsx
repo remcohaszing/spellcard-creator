@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import CloseIcon from '../CloseIcon';
 import IconButton from '../IconButton';
 import styles from './Chip.css';
 
@@ -32,11 +33,13 @@ export default class Chip extends React.Component {
       <div className={styles.root}>
         {children}
         <IconButton
-          icon="close"
+          aria-label={`Remove from ${name}`}
           className={styles.button}
           name={name}
           onClick={this.onClose}
-        />
+        >
+          <CloseIcon />
+        </IconButton>
       </div>
     );
   }

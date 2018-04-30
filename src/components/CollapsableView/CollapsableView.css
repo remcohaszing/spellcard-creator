@@ -8,10 +8,11 @@
   height: button-size;
   transition: transform 0.3s;
   width: button-size;
+  padding: 4px;
 }
 
-.collapse-button-collapsed {
-  transform: rotate(-90deg);
+.collapse-button-open {
+  transform: rotate(90deg);
 }
 
 .content {

@@ -7,8 +7,9 @@ import styles from './IconButton.css';
 
 export default class IconButton extends React.Component {
   static propTypes = {
+    'aria-label': PropTypes.string.isRequired,
     className: PropTypes.string,
-    icon: PropTypes.string.isRequired,
+    children: PropTypes.element.isRequired,
     type: PropTypes.string,
   };
 
@@ -20,14 +21,13 @@ export default class IconButton extends React.Component {
   render() {
     const {
       className,
-      icon,
       ...extraProps
     } = this.props;
 
     return (
       <button
         {...extraProps}
-        className={classNames('fa', `fa-${icon}`, styles.root, className)}
+        className={classNames(styles.root, className)}
       />
     );
   }

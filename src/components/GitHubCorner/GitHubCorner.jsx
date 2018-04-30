@@ -11,7 +11,7 @@ import styles from './GitHubCorner.css';
 export default class GitHubCorner extends React.Component {
   render() {
     return (
-      <a href="https://github.com/remcohaszing/spellcard-creator">
+      <a href="https://github.com/remcohaszing/spellcard-creator" title="See project on GitHub">
         <svg viewBox="0 0 250 250" className={styles.root}>
           <path
             d="M0 0l115 115h15l12 27 108 108V0z"

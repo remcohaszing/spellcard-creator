@@ -27,7 +27,7 @@
     "classnames": "^2.2.5",
     "css-loader": "^0.28.11",
     "csv-parse": "^2.2.0",
-    "eslint": "^4.19.1",
+    "eslint": "^5.0.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-babel": "^5.0.0",
     "eslint-plugin-import": "^2.11.0",

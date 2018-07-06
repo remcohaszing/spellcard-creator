@@ -25,7 +25,7 @@
     "babel-plugin-transform-react-pure-class-to-function": "^1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
     "classnames": "^2.2.5",
-    "css-loader": "^0.28.11",
+    "css-loader": "^1.0.0",
     "csv-parse": "^2.2.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
